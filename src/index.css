@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-sans: "Assistant", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Playfair Display", "Assistant", serif;
+
+  --color-background: #FFF9F5;
+  --color-surface: #FFFFFF;
+  --color-surface-container: #FFF0E6;
+  --color-surface-container-low: #FFF5F0;
+  --color-surface-container-high: #FFE8E0;
+  --color-surface-container-highest: #FFDED0;
+  --color-surface-bright: #FFFFFF;
+  --color-surface-dim: #FFF9F5;
+  --color-surface-variant: #FFF0E6;
+
+  --color-primary: #E8A0BF;
+  --color-primary-rgb: 232, 160, 191;
+  --color-primary-dim: #F4C2D7;
+  --color-primary-container: #FFE4EE;
+  --color-on-primary: #4A2A3A;
+  --color-on-primary-container: #6D3D54;
+
+  --color-secondary: #C0A0E8;
+  --color-secondary-dim: #D8C2F4;
+  --color-secondary-container: #F0E6FF;
+  --color-on-secondary: #3A2A4A;
+  --color-on-secondary-container: #543D6D;
+
+  --color-tertiary: #B9E8A0;
+  --color-tertiary-dim: #D2F4C2;
+  --color-tertiary-container: #E6FFE0;
+  --color-tertiary-fixed: #E6FFE0;
+  --color-on-tertiary: #2A4A3A;
+  --color-on-tertiary-container: #3D6D54;
+
+  --color-error: #FF8080;
+  --color-error-container: #FFE0E0;
+  --color-on-error: #600000;
+
+  --color-outline: #D0C0B0;
+  --color-outline-variant: #E8D8C8;
+
+  --color-on-surface: #4A3A3A;
+  --color-on-surface-variant: #8A7A7A;
+  --color-on-background: #4A3A3A;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-sans;
+    direction: rtl;
+  }
+}
+
+.glass {
+  background: rgba(37, 38, 38, 0.6);
+  backdrop-filter: blur(20px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

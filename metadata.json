@@ -1,0 +1,5 @@
+{
+  "name": "PassTheBar",
+  "description": "A focused study tracker for the Israel Bar Exam with RTL support and state-aware timing.",
+  "requestFramePermissions": []
+}
